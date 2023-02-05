@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="resume/style.css">
+        <script src="https://kit.fontawesome.com/205a886bcb.js" crossorigin="anonymous"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script> -->
+
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="resume/image/cat01.jpeg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I'm <span>Panu</span><br>From Thailand</h1>
+                </div>
+            </div>
+            <!--- About --->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="resume/image/cat03.jpeg">
+                        </div>
+                        <div class="about-col-2">
+                            <h2 class="sub-title">About Me</h2>
+                            <!-- <p>Currently now, I'm study in my third years bachelor's 
+                                degree Software and Knowledge Engineering Kasetsart. 
+                                Have a 3 years of experience in OOP and web
+                            </p> -->
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus scelerisque neque a pellentesque. Curabitur dui nisi, gravida a risus sit amet, mattis aliquet elit. In ornare enim lectus, sed efficitur lorem condimentum et. In euismod auctor tincidunt. Praesent sodales ex libero, in scelerisque nibh pulvinar sit amet. Mauris sagittis libero tristique metus suscipit molestie. Donec porttitor efficitur cursus.
+                            </p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Web Development</span><br>Web application development</li>
+                                    <li><span>???</span><br>Web-developer</li>
+                                    <li><span>???</span><br>Web-developer</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>3 years</span><br>Programing and OOP</li>
+                                    <li><span>2 years</span><br>Web-developer</li>
+                                    <li><span>Programing Language</span><br>Python, Java, Javascript, C, C++</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2013-2019</span><br>Student at Horwang School</li>
+                                    <li><span>2019-Now</span><br>Software and Knowledge Engineering at Kasetsart University</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---- servives---- -->
+        <div id="services">
+            <div class="container">
+                <h3 class="sub-title">My Services</h3>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-brands fa-google"></i>
+                        <h4>Web-developer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus scelerisque neque a pellentesque. Curabitur dui nisi, gravida a risus sit amet, mattis aliquet elit. In ornare enim lectus, sed efficitur lorem condimentum et.</p>
+                        <!-- <a href="#">learn more</a> -->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-microchip"></i>
+                        <h4>IOT</i></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus scelerisque neque a pellentesque. Curabitur dui nisi, gravida a risus sit amet, mattis aliquet elit. In ornare enim lectus, sed efficitur lorem condimentum et.</p>
+                        <!-- <a href="#">learn more</a> -->
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+        <!-- --------Portfolio-------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h5 class="sub-title">My Project</h5>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="resume/image/Garnbarn.png" id="img1">
+                        <div class="layer">
+                            <h6>Garnbarn</h6>
+                            <p>The application that remind the user of their assignment or work by line chatbot. This application was build on Django(Back-end) and Vue.js(Front-end).</p>
+                            <a href="https://github.com/GarnBarn" target="_blank"><i class="fas fa-regular fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="resume/image/KUL42069_LOGO.png" id="img2">
+                        <div class="layer">
+                            <h6>KUL42069</h6>
+                            <p>The application that represent the figure of the COVID-19 infection, Air quality and Hospital in each Thailand province. This application was build base on Next.js.</p>
+                            <a href="https://github.com/SoSorryTT/KUL42069" target="_blank"><i class="fas fa-regular fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------Contact----------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> markpanya@gmail.com</p>
+                        <p><i class="fa-sharp fa-solid fa-phone"></i> 084-734-0339</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/panu-tanavatavivat-a28103232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://line.me/ti/p/BkEvahARy1" target="_blank"><i class="fa-brands fa-line"></i></a>
+                            <a href="https://github.com/SoSorryTT" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100002789916362" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <a href="resume/image/Panu_Tanavatavivat.pdf" download class="btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <!-- <form action="sendemail.php" method="POST"> -->
+                        <form action="https://formsubmit.co/markpanya@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="New contact">
+                            <input type="text" id="name" name="Name" placeholder="You Name" required>
+                            <input type="text" id="email" name="Email" placeholder="Your Email" required>
+                            <textarea id="message" name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p><i class="fa-regular fa-copyright"></i> 2023 Panu Tanavatavivat, Thailand. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for(tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+
+        <!-- ------firebase---------- -->
+        <!-- <script>
+            var firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            databaseURL: "https://YOUR_DATABASE_URL.firebaseio.com",
+            projectId: "YOUR_PROJECT_ID",
+            };
+            firebase.initializeApp(firebaseConfig);
+        </script> -->
+  
+
+    </body>
+</html>
