@@ -7,15 +7,12 @@
         <title>Portfolio</title>
         <link rel="stylesheet" href="resume/style.css">
         <script src="https://kit.fontawesome.com/205a886bcb.js" crossorigin="anonymous"></script>
-        <!-- <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script> -->
-
     </head>
     <body>
         <div id="header">
             <div class="container">
                 <nav>
-                    <img src="resume/image/cat01.jpeg" class="logo">
+                    <img src="resume/image/Panu logo.png" class="logo">
                     <ul id="sidemenu">
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -24,6 +21,7 @@
                         <li><a href="#contact">Contact</a></li>
                         <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                     </ul>
+                    <img src="resume/image/Panu.jpg" class="rightimg">
                     <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
@@ -36,16 +34,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="about-col-1">
-                            <img src="resume/image/cat03.jpeg">
+                            <img src="resume/image/Panu-right.jpg">
                         </div>
                         <div class="about-col-2">
                             <h2 class="sub-title">About Me</h2>
-                            <!-- <p>Currently now, I'm study in my third years bachelor's 
-                                degree Software and Knowledge Engineering Kasetsart. 
-                                Have a 3 years of experience in OOP and web
-                            </p> -->
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus scelerisque neque a pellentesque. Curabitur dui nisi, gravida a risus sit amet, mattis aliquet elit. In ornare enim lectus, sed efficitur lorem condimentum et. In euismod auctor tincidunt. Praesent sodales ex libero, in scelerisque nibh pulvinar sit amet. Mauris sagittis libero tristique metus suscipit molestie. Donec porttitor efficitur cursus.
+                                Meet Mark, a 21-year-old student in his third year at Kasetsart University. He is studying software and knowledge engineering and is passionate about using technology to solve problems and make a positive impact. Mark is dedicated to his studies, determined to succeed, and confident in his education.
                             </p>
                             <div class="tab-titles">
                                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -55,8 +49,8 @@
                             <div class="tab-contents active-tab" id="skills">
                                 <ul>
                                     <li><span>Web Development</span><br>Web application development</li>
-                                    <li><span>???</span><br>Web-developer</li>
-                                    <li><span>???</span><br>Web-developer</li>
+                                    <li><span>IOT Development</span><br>Application with Microservices</li>
+                                    <li><span>OOP Development</span><br>Programing with OOP design</li>
                                 </ul>
                             </div>
 
@@ -64,7 +58,7 @@
                                 <ul>
                                     <li><span>3 years</span><br>Programing and OOP</li>
                                     <li><span>2 years</span><br>Web-developer</li>
-                                    <li><span>Programing Language</span><br>Python, Java, Javascript, C, C++</li>
+                                    <li><span>Programing Language</span><br>Python, Java, Javascript, C, C++, HTML, CSS</li>
                                 </ul>
                             </div>
 
@@ -87,13 +81,13 @@
                     <div>
                         <i class="fa-brands fa-google"></i>
                         <h4>Web-developer</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus scelerisque neque a pellentesque. Curabitur dui nisi, gravida a risus sit amet, mattis aliquet elit. In ornare enim lectus, sed efficitur lorem condimentum et.</p>
+                        <p>As a web developer, I bring both technical expertise and a creative vision to my work. I have a strong understanding of programming languages such as HTML, CSS, and JavaScript, which I use to build visually appealing and user-friendly websites. I am dedicated to creating functional and accessible web applications and stay up-to-date with the latest technologies and best practices in the industry. My passion for innovation and problem-solving, combined with my attention to detail, make me a valuable asset in the field of web development.</p>
                         <!-- <a href="#">learn more</a> -->
                     </div>
                     <div>
                         <i class="fa-solid fa-microchip"></i>
                         <h4>IOT</i></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus scelerisque neque a pellentesque. Curabitur dui nisi, gravida a risus sit amet, mattis aliquet elit. In ornare enim lectus, sed efficitur lorem condimentum et.</p>
+                        <p>With a background in hardware and micro-devices, I have a deep understanding of the Internet of Things (IoT) and its potential to revolutionize the way we live and work. My hands-on experience with these technologies gives me a unique perspective on how to create innovative solutions that can improve people's lives. I stay up-to-date with the latest advancements in the field, and my passion for innovation and problem-solving makes me a valuable asset to any IoT project.</p>
                         <!-- <a href="#">learn more</a> -->
                     </div>   
                 </div>
@@ -141,7 +135,6 @@
                         <a href="resume/image/Panu_Tanavatavivat.pdf" download class="btn">Download CV</a>
                     </div>
                     <div class="contact-right">
-                        <!-- <form action="sendemail.php" method="POST"> -->
                         <form action="https://formsubmit.co/markpanya@gmail.com" method="POST">
                             <input type="hidden" name="_subject" value="New contact">
                             <input type="text" id="name" name="Name" placeholder="You Name" required>
@@ -183,17 +176,5 @@
                 sidemenu.style.right = "-200px";
             }
         </script>
-
-        <!-- ------firebase---------- -->
-        <!-- <script>
-            var firebaseConfig = {
-            apiKey: "YOUR_API_KEY",
-            databaseURL: "https://YOUR_DATABASE_URL.firebaseio.com",
-            projectId: "YOUR_PROJECT_ID",
-            };
-            firebase.initializeApp(firebaseConfig);
-        </script> -->
-  
-
     </body>
 </html>
