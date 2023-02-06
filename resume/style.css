@@ -326,6 +326,16 @@ nav .fas {
     .header-text h1 {
         font-size: 30px;
     }
+    .logo {
+        width: 65%;
+    }
+    .rightimg {
+        width: 80%;
+        position: absolute;
+        border-radius: 20px;
+        right: 10%;
+        top: 30%;
+    }
     nav .fas {
         display: block;
         font-size: 25px;
@@ -368,13 +378,20 @@ nav .fas {
         margin-right: 20px;
     }
     #services {
-        padding: 700px 0 0 0;
+        padding: 770px 0 0 0;
+    }
+    .work img {
+        width: 77%;
+        height: 100%;
+        max-height: 225px;
+        border-radius: 10px;
+        display: block;
+        margin-bottom: 24px;
     }
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
     .copyright {
         font-size: 13px;
-        text-align: center;
     }
 }
